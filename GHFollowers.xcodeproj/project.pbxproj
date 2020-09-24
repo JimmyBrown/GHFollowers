@@ -65,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				BF5BB9DF25147F2B00BD0410 /* SearchVC.swift */,
-				BF5BB9EE2516AD5600BD0410 /* FollowerListVC.swift */,
 				BF5BB9E225147F7900BD0410 /* FavoritesListVC.swift */,
 			);
 			path = Screens;
@@ -148,6 +147,7 @@
 		BF68A99E25118CE50069F87A /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				BF5BB9EE2516AD5600BD0410 /* FollowerListVC.swift */,
 				BF523980251D4D71003D69A2 /* Utilities */,
 				BF523978251D3909003D69A2 /* Managers */,
 				BF523970251C576E003D69A2 /* Model */,
