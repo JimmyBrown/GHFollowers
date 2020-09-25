@@ -45,11 +45,7 @@ class FollowerListVC: UIViewController {
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
     }
     
-    
 
-    
-    
-    
     func getFollowers() {
         NetworkManager.shared.getFollowers(for: username, page: 1) { [weak self] result in
             guard let self = self else { return }
