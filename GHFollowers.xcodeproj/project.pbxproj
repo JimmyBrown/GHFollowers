@@ -27,6 +27,7 @@
 		BF68A9A225118CE50069F87A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68A9A125118CE50069F87A /* SceneDelegate.swift */; };
 		BF68A9A925118CE60069F87A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF68A9A825118CE60069F87A /* Assets.xcassets */; };
 		BF68A9AC25118CE60069F87A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF68A9AA25118CE60069F87A /* LaunchScreen.storyboard */; };
+		BFA546EF251E922100A43F8D /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA546EE251E922100A43F8D /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		BF68A9A825118CE60069F87A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF68A9AB25118CE60069F87A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF68A9AD25118CE60069F87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA546EE251E922100A43F8D /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				BF523981251D4D83003D69A2 /* ErrorMessage.swift */,
+				BFA546EE251E922100A43F8D /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				BF5BB9EF2516AD5600BD0410 /* FollowerListVC.swift in Sources */,
 				BF68A9A025118CE50069F87A /* AppDelegate.swift in Sources */,
 				BF523982251D4D83003D69A2 /* ErrorMessage.swift in Sources */,
+				BFA546EF251E922100A43F8D /* UIHelper.swift in Sources */,
 				BF52397A251D3923003D69A2 /* NetworkManager.swift in Sources */,
 				BF68A9A225118CE50069F87A /* SceneDelegate.swift in Sources */,
 				BF52396E251C4AC2003D69A2 /* GFContainerView.swift in Sources */,
