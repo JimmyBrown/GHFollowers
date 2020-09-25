@@ -16,6 +16,8 @@
 		BF523975251C5926003D69A2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF523974251C5926003D69A2 /* User.swift */; };
 		BF52397A251D3923003D69A2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF523979251D3923003D69A2 /* NetworkManager.swift */; };
 		BF523982251D4D83003D69A2 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF523981251D4D83003D69A2 /* ErrorMessage.swift */; };
+		BF52398C251D7C4C003D69A2 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52398B251D7C4C003D69A2 /* FollowerCell.swift */; };
+		BF52398F251D7CE2003D69A2 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52398E251D7CE2003D69A2 /* GFAvatarImageView.swift */; };
 		BF5BB9E025147F2B00BD0410 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BB9DF25147F2B00BD0410 /* SearchVC.swift */; };
 		BF5BB9E325147F7900BD0410 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BB9E225147F7900BD0410 /* FavoritesListVC.swift */; };
 		BF5BB9E8251572DA00BD0410 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BB9E7251572DA00BD0410 /* GFButton.swift */; };
@@ -37,6 +39,8 @@
 		BF523974251C5926003D69A2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BF523979251D3923003D69A2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BF523981251D4D83003D69A2 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		BF52398B251D7C4C003D69A2 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
+		BF52398E251D7CE2003D69A2 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		BF5BB9DF25147F2B00BD0410 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		BF5BB9E225147F7900BD0410 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		BF5BB9E7251572DA00BD0410 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
@@ -73,12 +77,14 @@
 		BF523969251C3C7B003D69A2 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				BF52398A251D7C22003D69A2 /* Cells */,
 				BF523962251A7997003D69A2 /* GFAlertVC.swift */,
 				BF5BB9E7251572DA00BD0410 /* GFButton.swift */,
 				BF52395C251A6BD7003D69A2 /* GFTitleLabel.swift */,
 				BF5BB9EA251579B300BD0410 /* GFTextField.swift */,
 				BF52395F251A6D82003D69A2 /* GFBodyLabel.swift */,
 				BF52396D251C4AC2003D69A2 /* GFContainerView.swift */,
+				BF52398E251D7CE2003D69A2 /* GFAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -126,6 +132,14 @@
 				BF523981251D4D83003D69A2 /* ErrorMessage.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BF52398A251D7C22003D69A2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BF52398B251D7C4C003D69A2 /* FollowerCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		BF68A99325118CE50069F87A = {
@@ -235,6 +249,8 @@
 				BF5BB9E025147F2B00BD0410 /* SearchVC.swift in Sources */,
 				BF523963251A7997003D69A2 /* GFAlertVC.swift in Sources */,
 				BF523975251C5926003D69A2 /* User.swift in Sources */,
+				BF52398C251D7C4C003D69A2 /* FollowerCell.swift in Sources */,
+				BF52398F251D7CE2003D69A2 /* GFAvatarImageView.swift in Sources */,
 				BF523960251A6D82003D69A2 /* GFBodyLabel.swift in Sources */,
 				BF523972251C577F003D69A2 /* Follower.swift in Sources */,
 				BF52395D251A6BD7003D69A2 /* GFTitleLabel.swift in Sources */,
