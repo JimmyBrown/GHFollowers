@@ -29,6 +29,9 @@
 		BF9078CD2523DB8A0061209E /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9078CC2523DB8A0061209E /* GFEmptyStateView.swift */; };
 		BF9078D22525760E0061209E /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9078D12525760E0061209E /* UserInfoVC.swift */; };
 		BF9078D6252656F00061209E /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9078D5252656F00061209E /* GFError.swift */; };
+		BF9078D92526855B0061209E /* GFUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9078D82526855B0061209E /* GFUserInfoHeaderVC.swift */; };
+		BF9078DC2526886A0061209E /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9078DB2526886A0061209E /* GFSecondaryTitleLabel.swift */; };
+		BF9078DF2526E50F0061209E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9078DE2526E50F0061209E /* Constants.swift */; };
 		BFA546EF251E922100A43F8D /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA546EE251E922100A43F8D /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,9 @@
 		BF9078CC2523DB8A0061209E /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		BF9078D12525760E0061209E /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		BF9078D5252656F00061209E /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
+		BF9078D82526855B0061209E /* GFUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderVC.swift; sourceTree = "<group>"; };
+		BF9078DB2526886A0061209E /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		BF9078DE2526E50F0061209E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BFA546EE251E922100A43F8D /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +144,7 @@
 			children = (
 				BFA546EE251E922100A43F8D /* UIHelper.swift */,
 				BF9078D5252656F00061209E /* GFError.swift */,
+				BF9078DE2526E50F0061209E /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -217,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				BF523962251A7997003D69A2 /* GFAlertVC.swift */,
+				BF9078D82526855B0061209E /* GFUserInfoHeaderVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -226,6 +234,7 @@
 			children = (
 				BF52395C251A6BD7003D69A2 /* GFTitleLabel.swift */,
 				BF52395F251A6D82003D69A2 /* GFBodyLabel.swift */,
+				BF9078DB2526886A0061209E /* GFSecondaryTitleLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -302,9 +311,11 @@
 				BF5BB9EB251579B300BD0410 /* GFTextField.swift in Sources */,
 				BF5BB9E325147F7900BD0410 /* FavoritesListVC.swift in Sources */,
 				BF9078CD2523DB8A0061209E /* GFEmptyStateView.swift in Sources */,
+				BF9078D92526855B0061209E /* GFUserInfoHeaderVC.swift in Sources */,
 				BF5BB9E8251572DA00BD0410 /* GFButton.swift in Sources */,
 				BF523966251C335B003D69A2 /* UIViewController+Ext.swift in Sources */,
 				BF5BB9E025147F2B00BD0410 /* SearchVC.swift in Sources */,
+				BF9078DC2526886A0061209E /* GFSecondaryTitleLabel.swift in Sources */,
 				BF523963251A7997003D69A2 /* GFAlertVC.swift in Sources */,
 				BF523975251C5926003D69A2 /* User.swift in Sources */,
 				BF9078D6252656F00061209E /* GFError.swift in Sources */,
@@ -320,6 +331,7 @@
 				BF52397A251D3923003D69A2 /* NetworkManager.swift in Sources */,
 				BF68A9A225118CE50069F87A /* SceneDelegate.swift in Sources */,
 				BF52396E251C4AC2003D69A2 /* GFContainerView.swift in Sources */,
+				BF9078DF2526E50F0061209E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
