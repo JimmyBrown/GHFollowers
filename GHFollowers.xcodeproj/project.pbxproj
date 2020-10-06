@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF2B3E99252CD56900260AA8 /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B3E98252CD56900260AA8 /* GFItemInfoView.swift */; };
 		BF52395D251A6BD7003D69A2 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52395C251A6BD7003D69A2 /* GFTitleLabel.swift */; };
 		BF523960251A6D82003D69A2 /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52395F251A6D82003D69A2 /* GFBodyLabel.swift */; };
 		BF523963251A7997003D69A2 /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF523962251A7997003D69A2 /* GFAlertVC.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF2B3E98252CD56900260AA8 /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 		BF52395C251A6BD7003D69A2 /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		BF52395F251A6D82003D69A2 /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		BF523962251A7997003D69A2 /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			children = (
 				BF9078CC2523DB8A0061209E /* GFEmptyStateView.swift */,
 				BF52396D251C4AC2003D69A2 /* GFContainerView.swift */,
+				BF2B3E98252CD56900260AA8 /* GFItemInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				BFA546EF251E922100A43F8D /* UIHelper.swift in Sources */,
 				BF52397A251D3923003D69A2 /* NetworkManager.swift in Sources */,
 				BF68A9A225118CE50069F87A /* SceneDelegate.swift in Sources */,
+				BF2B3E99252CD56900260AA8 /* GFItemInfoView.swift in Sources */,
 				BF52396E251C4AC2003D69A2 /* GFContainerView.swift in Sources */,
 				BF9078DF2526E50F0061209E /* Constants.swift in Sources */,
 			);
