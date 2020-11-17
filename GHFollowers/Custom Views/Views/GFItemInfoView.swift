@@ -11,7 +11,6 @@ enum ItemInfoType {
     case repos, gists, followers, following
 }
 
-
 class GFItemInfoView: UIView {
     
     let symbolImageView = UIImageView()
@@ -23,7 +22,6 @@ class GFItemInfoView: UIView {
         super.init(frame: frame)
         configure()
     }
-    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

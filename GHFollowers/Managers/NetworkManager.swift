@@ -9,6 +9,7 @@
 import UIKit
 
 class NetworkManager {
+    
     static let shared = NetworkManager()
     private let baseURL = "https://api.github.com/users/"
     let cache = NSCache<NSString, UIImage>()
@@ -119,9 +120,9 @@ class NetworkManager {
                   let response = response as? HTTPURLResponse, response.statusCode == 200,
                   let data = data,
                   let image = UIImage(data: data) else {
-                    completed(nil)
-                    return
-                }
+                completed(nil)
+                return
+            }
             
             self.cache.setObject(image, forKey: cacheKey)
             
