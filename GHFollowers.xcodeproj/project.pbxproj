@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E26137725635485000CEA3A /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26137625635485000CEA3A /* UITableView+Ext.swift */; };
 		3E8E3667255B4DA400EC24C1 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8E3666255B4DA400EC24C1 /* UIView+Ext.swift */; };
 		BF0128BD252E4B55001712B6 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0128BC252E4B55001712B6 /* Date+Ext.swift */; };
 		BF0128C3252F7D13001712B6 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0128C2252F7D13001712B6 /* PersistenceManager.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E26137625635485000CEA3A /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		3E8E3666255B4DA400EC24C1 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		BF0128BC252E4B55001712B6 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		BF0128C2252F7D13001712B6 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				BF523965251C335B003D69A2 /* UIViewController+Ext.swift */,
 				BF0128BC252E4B55001712B6 /* Date+Ext.swift */,
 				3E8E3666255B4DA400EC24C1 /* UIView+Ext.swift */,
+				3E26137625635485000CEA3A /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				BF68A9A225118CE50069F87A /* SceneDelegate.swift in Sources */,
 				BF2B3E99252CD56900260AA8 /* GFItemInfoView.swift in Sources */,
 				BF52396E251C4AC2003D69A2 /* GFContainerView.swift in Sources */,
+				3E26137725635485000CEA3A /* UITableView+Ext.swift in Sources */,
 				BF9078DF2526E50F0061209E /* Constants.swift in Sources */,
 				BF8A167A2530DE9D008BE1F7 /* GFTabBarController.swift in Sources */,
 			);
