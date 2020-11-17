@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E8E3667255B4DA400EC24C1 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8E3666255B4DA400EC24C1 /* UIView+Ext.swift */; };
 		BF0128BD252E4B55001712B6 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0128BC252E4B55001712B6 /* Date+Ext.swift */; };
 		BF0128C3252F7D13001712B6 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0128C2252F7D13001712B6 /* PersistenceManager.swift */; };
 		BF0128C6252F93CD001712B6 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0128C5252F93CD001712B6 /* FavoriteCell.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E8E3666255B4DA400EC24C1 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		BF0128BC252E4B55001712B6 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		BF0128C2252F7D13001712B6 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		BF0128C5252F93CD001712B6 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				BF523965251C335B003D69A2 /* UIViewController+Ext.swift */,
 				BF0128BC252E4B55001712B6 /* Date+Ext.swift */,
+				3E8E3666255B4DA400EC24C1 /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8E3667255B4DA400EC24C1 /* UIView+Ext.swift in Sources */,
 				BF5BB9EB251579B300BD0410 /* GFTextField.swift in Sources */,
 				BF5BB9E325147F7900BD0410 /* FavoritesListVC.swift in Sources */,
 				BF9078CD2523DB8A0061209E /* GFEmptyStateView.swift in Sources */,
