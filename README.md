@@ -1,4 +1,5 @@
 # GHFollowers
+Portfolio app. Searches GitHub for a user's followers. Able to save users to a Favorites tab and store them persistantly.
 
 
 100% programmatically - No Storyboard  
