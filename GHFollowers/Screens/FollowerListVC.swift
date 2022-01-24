@@ -83,20 +83,36 @@ class FollowerListVC: GFDataLoadingVC {
         showLoadingView()
         isLoadingMoreFollowers = true
         
-        NetworkManager.shared.getFollowers(for: username, page: page) { [weak self] result in
-            guard let self = self else { return }
-            self.dismissLoadingView()
-            
-            switch result {
-            case .success(let followers):
-                self.updateUI(with: followers)
-                
-            case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Bad Stuff Happened", message: error.rawValue, buttonTitle: "Ok")
+        Task {
+            do {
+                let followers = try await NetworkManager.shared.getFollowers(for: username, page: page)
+                updateUI(with: followers)
+                dismissLoadingView()
+            } catch {
+                if let gfError = error as? GFError {
+                    presentGFAlert(title: "Bad Stuff Happened", message: gfError.rawValue, buttonTitle: "Ok")
+                } else {
+                    presentDefaultError()
+                }
+                dismissLoadingView()
             }
-            
-            self.isLoadingMoreFollowers = false
         }
+        
+        
+        //        NetworkManager.shared.getFollowers(for: username, page: page) { [weak self] result in
+        //            guard let self = self else { return }
+        //            self.dismissLoadingView()
+        //
+        //            switch result {
+        //            case .success(let followers):
+        //                self.updateUI(with: followers)
+        //
+        //            case .failure(let error):
+        //                self.presentGFAlertOnMainThread(title: "Bad Stuff Happened", message: error.rawValue, buttonTitle: "Ok")
+        //            }
+        //
+        //            self.isLoadingMoreFollowers = false
+        //        }
     }
     
     
@@ -134,16 +150,19 @@ class FollowerListVC: GFDataLoadingVC {
     @objc func addButtonTapped() {
         showLoadingView()
         
-        NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
-            guard let self = self else { return }
-            self.dismissLoadingView()
-            
-            switch result {
-            case .success(let user):
-                self.addUserToFavorites(user: user)
+        Task {
+            do {
+                let user = try await NetworkManager.shared.getUserInfo(for: username)
+                addUserToFavorites(user: user)
+                dismissLoadingView()
+            } catch {
+                if let gfError = error as? GFError {
+                    presentGFAlert(title: "Something Went Wrong", message: gfError.rawValue, buttonTitle: "OK")
+                } else {
+                    presentDefaultError()
+                }
                 
-            case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
+                dismissLoadingView()
             }
         }
     }
@@ -156,11 +175,15 @@ class FollowerListVC: GFDataLoadingVC {
             guard let self = self else { return }
             
             guard let error = error else {
-                self.presentGFAlertOnMainThread(title: "Success", message: "You have successfully favorited this user 🥳", buttonTitle: "Rad!")
+                DispatchQueue.main.async {
+                    self.presentGFAlert(title: "Success", message: "You have successfully favorited this user 🥳", buttonTitle: "Rad!")
+                }
                 return
             }
             
-            self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
+            DispatchQueue.main.async {
+                self.presentGFAlert(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
+            }
         }
     }
 }
